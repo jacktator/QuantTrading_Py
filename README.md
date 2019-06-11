@@ -29,9 +29,7 @@ This mini QuantTrading project will have the following features:
 
 ### TradeStrategy x 2
 
-#### Strategy 1
-
-Trade Strategy 1: Trend Following.
+#### Strategy 1: Trend Following.
 
 When price rises above an absolute threshold `p_change_threshold` percent, default to 2%. 
 
@@ -39,9 +37,7 @@ Buy and hold for `hold_stock_threshold` days, default to 20.
 
 [Source File](./alpha/strategies/strategy_1.ipynb) & [Demo Usage](./alpha/strategies/strategy_1_usage.ipynb).
 
-#### Strategy 2
-
-Trade Strategy 2: Reversion.
+#### Strategy 2: Reversion.
  
 When price falls consecutively for two days, and cumulatively more than `p_change_threshold` percent in total, default to 10%.
 
