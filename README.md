@@ -19,6 +19,8 @@ This mini QuantTrading project will have the following features:
 1. [Trade Strategies](#trade-strategies)
     1. [Trend Following](#strategy-1-trend-following)
     1. [Mean Reversion](#strategy-2-mean-reversion)
+    1. [MA + Rolling STD](#strategy-3-moving-average--standard-deviation)
+    1. [Slope & Velocity](#strategy-4-slope--velocity)
 1. [Testing](#testing)
     1. [Back Testing](#back-testing)
     1. [Strategy Analysis](#strategy-analysis)
@@ -91,6 +93,25 @@ Buy and hold for `hold_stock_threshold` days, default to 10.
 
 [Source File](./alpha/strategies/strategy_2.ipynb) & [Demo Usage](./alpha/strategies/strategy_2_usage.ipynb).
 
+### Strategy 3: Moving Average + Standard Deviation
+ 
+Use `_x_days` (Default 5) of data as moving average, when price rises or falls by Moving Average +- `_std_mutiplier`(Default 2.0) * Moving Standard Deviation.
+
+Close when price moves back to moving average.
+
+[Source File](./alpha/strategies/strategy_3.ipynb) & [Demo Usage](./alpha/strategies/strategy_3_usage.ipynb).
+
+### Strategy 4: Slope & Velocity
+ 
+Use close price to draw a trend, use the derivative to find the `slope`. Use the derivative again to find the `velocity` for change.
+
+- Long when price is rising (slope > _buy_slope_threshold > 0) & accelerating (velocity > _buy_velocity_threshold > 0) and,
+    - Close when price starting to fall (slope < -_close_slope_threshold < 0 and velocity < -_close_velocity_threshold < 0)
+- Short when price is falling (slope < _sell_slope_threshold < 0) & accelerating (velocity < _sell_velocity_threshold < 0) and,
+    - Close when price starting to rise (slope > _close_slope_threshold > 0 and velocity > _close_velocity_threshold > 0)
+
+[Source File](./alpha/strategies/strategy_2.ipynb) & [Demo Usage](./alpha/strategies/strategy_2_usage.ipynb).
+
 ## Testing
 
 This section covers the back testing and optimization of strategies.
@@ -101,7 +122,9 @@ This section covers the back testing and optimization of strategies.
 
 Use one set of 2 parameter, `p_change_threshold` (p1) & `hold_stock_threshold` (p2).
 
-Trading AXP, when Price rises above **3**%, buy and hold for **5** days. Strategy Resulted **4.85**%.
+Trading AXP, when Price rises above **3**%, buy and hold for **5** days. 
+
+Strategy Resulted **4.85**%.
 
 [Source File](./alpha/strategies/strategy_1_usage.ipynb) 
 
@@ -109,30 +132,53 @@ Trading AXP, when Price rises above **3**%, buy and hold for **5** days. Strateg
 
 Use one set of 2 parameter, `p_change_threshold` (p1) & `hold_stock_threshold` (p2).
 
-Trading AXP, when Price falls above **5**% in 2 consecutive days, buy and hold for **3** days. Strategy Resulted **-2.02**%.
+Trading AXP, when Price falls above **5**% in 2 consecutive days, buy and hold for **3** days. 
+
+Strategy Resulted **-2.02**%.
 
 [Source File](./alpha/strategies/strategy_2_usage.ipynb)
 
+#### Strategy 3
+
+Use one set of 2 parameter, `std_mutiplier` (p1) & `x_days` (p2).
+
+Trading AXP, take `x_days`of rolling average and standard deviation, and trade when price deviates from moving average too much.  
+
+Strategy Resulted **1.31**%.
+
+[Source File](./alpha/strategies/strategy_3_usage.ipynb)
+
+#### Strategy 4
+
+Use one set of 6 threshold parameter.
+
+Trading AXP, buy when slope and velocity is more than 0.1 and close when both is 0. 
+Sell when slope and velocity is less then -0.1 and close when both is 0
+
+Strategy Resulted **200.62**%.
+
+[Source File](./alpha/strategies/strategy_4_usage.ipynb)
+
 ### Strategy Analysis
 
-Optimizing Strategy1, Trading AXP, Use 10,000 sets of 2 parameters (100 p1s and 100 p2s), back test all 10,000 sets, and find the best 5 sets of p1 & p2 which yields the highest profit.
+#### Linear Regression & Interpolation
+
+Find a Linear Regression Model that describes the relationship between `date` and `price` using OLS. 
+
+> price = k * price + b
+
+The result is 
+
+> price = 0.0574 * price + 85.6971
+
+[Source File](alpha/analysis/regression.ipynb)
 
 #### Using Monte Carlo
 
-[Source File](alpha/analysis/monte-carlo.ipynb).
+Utilizing Strategy4, Trading AXP, Use 10^6 sets of 6 parameters, back test all sets, and find the best 5 sets of parameters which yields the highest profit.
+
+[TODO: Source File](alpha/analysis/monte-carlo.ipynb).
 
 #### Using Convex
 
-[Source File](alpha/analysis/convex.ipynb).
-
-## Structure:
-
-assets
-data
-
-## TOC:
-
-- Alpha Models
-- Risk Models
-- Cost Models
-- Portfolio Construction Models
+[TODO: Source File](alpha/analysis/convex.ipynb).
