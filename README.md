@@ -110,7 +110,7 @@ Use close price to draw a trend, use the derivative to find the `slope`. Use the
 - Short when price is falling (slope < _sell_slope_threshold < 0) & accelerating (velocity < _sell_velocity_threshold < 0) and,
     - Close when price starting to rise (slope > _close_slope_threshold > 0 and velocity > _close_velocity_threshold > 0)
 
-[Source File](./alpha/strategies/strategy_2.ipynb) & [Demo Usage](./alpha/strategies/strategy_2_usage.ipynb).
+[Source File](./alpha/strategies/strategy_4.ipynb) & [Demo Usage](./alpha/strategies/strategy_4_usage.ipynb).
 
 ## Testing
 
