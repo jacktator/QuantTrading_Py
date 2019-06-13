@@ -175,7 +175,7 @@ Using `numpy` and `masks` to basktest with 1024 sets of parameters, and find out
 
 Best Result: **204.35312**% 
 
-[Source File](alpha/strategies/backtest_1.ipynb).
+[Source File](alpha/strategies/backtest_2.ipynb).
 
 ### Strategy Analysis
 
