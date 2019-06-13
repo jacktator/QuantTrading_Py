@@ -163,11 +163,11 @@ Strategy Resulted **200.62**%.
 
 Using `itertools` and `ThreadPoolExecutor` to basktest with 1024 sets of parameters, and find out which set yields best results.
 
-Best Result: **204.35312**%. 
+Best Result: **210.019729**%. 
 
 [Source File](alpha/strategies/backtest_1.ipynb).
 
-Note, backtesting this way takes **VERY VERY long time**. For this case, 3:34 to complete 1024 tests. Hence the following faster method.
+Note, backtesting this way takes **VERY VERY long time**. For this case, 3:11 to complete 1024 tests. Hence the following faster method.
 
 #### Numpy Backtet
 
