@@ -177,7 +177,7 @@ The result is
 
 Utilizing Strategy4, Trading AXP, Use 10^6 sets of 6 parameters, back test all sets, and find the best 5 sets of parameters which yields the highest profit.
 
-[TODO: Source File](alpha/analysis/monte-carlo.ipynb).
+[TODO: Source File](alpha/strategies/monte-carlo.ipynb).
 
 #### Using Convex
 
