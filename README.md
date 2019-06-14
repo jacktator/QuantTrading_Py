@@ -173,9 +173,17 @@ Note, backtesting this way takes **VERY VERY long time**. For this case, 3:11 to
 
 Using `numpy` and `masks` to basktest with 1024 sets of parameters, and find out which set yields best results.
 
-Best Result: **204.35312**% 
+Best Result: **204.35312**%. Finished in 24:34.
 
 [Source File](alpha/strategies/backtest_2.ipynb).
+
+#### Namba JIT Backtet
+
+Building upon Numpy Backtest, wrap it with Namba JIT to boost performance.
+
+Best Result: **204.35312**%. Finished in ??.
+
+[Source File](alpha/strategies/backtest_3.ipynb).
 
 ### Strategy Analysis
 
