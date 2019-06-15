@@ -126,7 +126,7 @@ The result is
 
 > price = 0.0574 * price + 85.6971
 
-[Source File](./analysis/regression.ipynb)
+[Source File](../data/analysis/regression.ipynb)
 
 ### Using Monte Carlo
 

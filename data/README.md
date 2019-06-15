@@ -36,7 +36,9 @@ For example, we are fetching the prices for all stocks belong to the **same indu
 
 Given historical prices, let's analyse it.
 
-[TODO: Source File](./analysis/analysis.ipynb)
+### Regression & Interpolation
+
+[Source File](./analysis/regression.ipynb)
 
 ## Data Visualization
 
