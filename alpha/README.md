@@ -114,6 +114,14 @@ Best Result: **177.03**%. Finished in 15:34s.
 
 [Source File](strategies/optimization_3.ipynb).
 
+#### Namba + MultiProcessing Backtet
+
+Turbo charge Namba with MultiProcess.
+
+Best Result: **177.03**%. Finished in 15:34s.
+
+[Source File](strategies/optimization_4.ipynb).
+
 ## Strategy Analysis
 
 ### Linear Regression & Interpolation
