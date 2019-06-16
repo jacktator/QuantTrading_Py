@@ -40,6 +40,7 @@ For example, we are fetching the historical daily rate for **AUDSUD**.
 
 - Fetch Data by REST API
 - Fetch Data by python package
+- Process Data
 - Save & Read to `.csv` file
 
 [Source File](./historical/forex_daily.ipynb) & [.csv file](./gen/AUDUSD_Daily_df.csv).
