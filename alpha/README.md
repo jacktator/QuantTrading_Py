@@ -114,11 +114,11 @@ Best Result: **177.03**%. Finished in 15:34s.
 
 [Source File](strategies/optimization_3.ipynb).
 
-#### Namba + MultiProcessing Backtet
+####  MultiProcessing + Numpy Backtet
 
 Turbo charge Namba with MultiProcess.
 
-Best Result: **177.03**%. Finished in 15:34s.
+Best Result: **177.03**%. Finished in 07:22s.
 
 [Source File](strategies/optimization_4.ipynb).
 
