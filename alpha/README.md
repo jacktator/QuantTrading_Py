@@ -122,6 +122,14 @@ Best Result: **177.03**%. Finished in 07:22s.
 
 [Source File](strategies/optimization_4.ipynb).
 
+####  Forex (mp+np) Backtet
+
+Backtesting 160,000 sets of params to find the best params for [Slope & Velocity Strategy](#strategy-4-slope--velocity).
+
+Best Result: **177.03**%. Finished in 07:22s.
+
+[Source File](strategies/optimization_4.ipynb).
+
 ## Strategy Analysis
 
 ### Linear Regression & Interpolation
