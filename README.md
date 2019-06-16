@@ -10,10 +10,11 @@ Credit: Inside the Black Box : Summary
 
 This mini QuantTrading project will have the following components:
 
-1. [Stock Data](./data/README.md)
+1. [Market Data](./data/README.md)
     1. [Modelling TradeDay](./data/README.md#modelling-tradeday)
     1. [Single Stock Prices](./data/README.md#single-stock-prices)
     1. [Industry Stocks Prices](./data/README.md#industry-stocks-prices)
+    1. [Forex Prices](./data/README.md#forex-rate)
     1. [Data Analysis](./data/README.md#data-analysis)
     1. [Data Visualization](./data/README.md#data-visualization)
 1. [Trade Strategies](./alpha/README.md#trade-strategies)

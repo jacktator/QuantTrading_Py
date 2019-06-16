@@ -32,6 +32,18 @@ For example, we are fetching the prices for all stocks belong to the **same indu
 
 [Source File](./historical/industry_prices.ipynb) & [.csv file](./gen/fin_svs_p.csv).
 
+## Forex Rate
+
+Use AlphaVantage to fetch Forex Rate as `DataFrame`. 
+
+For example, we are fetching the historical daily rate for **AUDSUD**.
+
+- Fetch Data by REST API
+- Fetch Data by python package
+- Save & Read to `.csv` file
+
+[Source File](./historical/forex_daily.ipynb) & [.csv file](./gen/AUDUSD_Daily_df.csv).
+
 ## Data Analysis
 
 Given historical prices, let's analyse it.
