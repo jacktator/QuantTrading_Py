@@ -4,7 +4,15 @@ A mini Quant Trading System with Alpha, Risks, Cost, Portfolio Construction Mode
 
 ![](./assets/quant-models.jpg)
 
-Credit: Inside the Black Box : Summary
+> Inside the Black Box : Summary
+
+## Highlight: 
+
+**404.0%** return for one year (240 trade days), trading Forex (AUDUSD) using [Slope & Velocity Strategy](./alpha#strategy-4-slope--velocity)
+
+![](./alpha/gen/AUDUSD_Strategy4.png)
+
+> Shadow: Red = LONG, Green = SHORT, Black = CLOSE.
 
 ## TOC
 

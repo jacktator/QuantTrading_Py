@@ -84,6 +84,18 @@ Strategy Resulted **200.62**%.
 
 [Source File](./strategies/strategy_4_test.ipynb)
 
+### Strategy Forex
+
+Utilizing Strategy 4, applying to Forex (AUDUSD).
+
+Strategy Resulted **404.0**% for last 240 trade days (Without Optimization). See Trades below
+
+![](./gen/AUDUSD_Strategy4.png)
+
+Candlestick: Red up Green down. Shadow: Red LONG, Green SHORT, Black CLOSE. 
+
+[Source File](./strategies/strategy_forex.ipynb)
+
 ## Strategy Optimization
 
 Finding the Optimal Parameters for a given strategy. 
