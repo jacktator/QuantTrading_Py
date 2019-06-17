@@ -88,7 +88,7 @@ Strategy Resulted **200.62**%.
 
 Utilizing Strategy 4, applying to Forex (AUDUSD).
 
-Strategy Resulted **404.0**% for last 240 trade days (Without Optimization). See Trades below
+Strategy Resulted **468.82**% for last 240 trade days (Without Optimization). See Trades below
 
 ![](./gen/AUDUSD_Strategy4.png)
 
