@@ -94,11 +94,11 @@ Strategy Resulted **200.62**%.
 
 Utilizing Strategy 4, applying to Forex (AUDUSD).
 
-Strategy Resulted **477.18**% for last 240 trade days (Without Optimization). See Trades below
+Strategy Resulted **230.93**% for last 240 trade days (Without Optimization). See Trades below
 
 ![](./gen/StrategySV_AUDUSD_Daily.png)
 
-> Shadow: Red = LONG, Green = SHORT, Black = CLOSE.
+> Shadow: Green = LONG, Red = SHORT, Blank = CLOSE.
 
 [Source File](strategies/strategy_sv.ipynb)
 

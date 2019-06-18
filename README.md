@@ -4,13 +4,13 @@ A mini Quant Trading System with Alpha, Risks, Cost, Portfolio Construction Mode
 
 ## Highlight: 
 
-**477.18**% for last 240 trade days,  using [Slope & Velocity Strategy](./alpha#strategy-forex).
+**230.93**% for last 240 trade days, using [Slope & Velocity Strategy](./alpha#strategy-forex).
 
 ![](./alpha/gen/StrategySV_AUDUSD_Daily.png)
 
-> Shadow: Red = LONG, Green = SHORT, Black = CLOSE.
+> Shadow: Green = LONG, Red = SHORT, Blank = CLOSE.
 
-## TOC
+## Summary
 
 This mini QuantTrading project will have the following components:
 
