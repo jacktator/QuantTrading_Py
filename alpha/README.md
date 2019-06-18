@@ -37,6 +37,12 @@ Use close price to draw a trend, use the derivative to find the `slope`. Use the
 
 [Source File](./strategies/strategy_4.ipynb) & [Demo Usage](./strategies/strategy_4_test.ipynb).
 
+## Strategy 5: Slope & Velocity
+
+Similar to Strategy 4, optimized for performance.
+
+[Source File](./strategies/strategy_sv.ipynb) & [Demo Usage](./strategies/strategy_sv.ipynb).
+
 # Testing Strategies
 
 This section covers the back testing and optimization of strategies.
@@ -88,13 +94,13 @@ Strategy Resulted **200.62**%.
 
 Utilizing Strategy 4, applying to Forex (AUDUSD).
 
-Strategy Resulted **468.82**% for last 240 trade days (Without Optimization). See Trades below
+Strategy Resulted **477.18**% for last 240 trade days (Without Optimization). See Trades below
 
-![](./gen/AUDUSD_Strategy4.png)
+![](./gen/StrategySV_AUDUSD_Daily.png)
 
-Candlestick: Red up Green down. Shadow: Red LONG, Green SHORT, Black CLOSE. 
+> Shadow: Red = LONG, Green = SHORT, Black = CLOSE.
 
-[Source File](./strategies/strategy_forex.ipynb)
+[Source File](strategies/strategy_sv.ipynb)
 
 ## Strategy Optimization
 
