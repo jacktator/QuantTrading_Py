@@ -10,6 +10,8 @@ A mini Quant Trading System with Alpha, Risks, Cost, Portfolio Construction Mode
 
 > Shadow: Green = LONG, Red = SHORT, Blank = CLOSE.
 
+[Strategy Optimization](./alpha/strategies/optimization_sv.ipynb)
+
 ## Summary
 
 This mini QuantTrading project will have the following components:
