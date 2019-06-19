@@ -90,17 +90,13 @@ Strategy Resulted **200.62**%.
 
 [Source File](./strategies/strategy_4_test.ipynb)
 
-### Strategy Forex
+### Strategy SV
 
 Utilizing Strategy 4, applying to Forex (AUDUSD).
 
-Strategy Resulted **230.93**% for last 240 trade days (Without Optimization). See Trades below
+Strategy Resulted **281.11%**% for last 288 trade days. See Trades below
 
-![](./gen/StrategySV_AUDUSD_Daily.png)
-
-> Shadow: Green = LONG, Red = SHORT, Blank = CLOSE.
-
-[Source File](strategies/strategy_sv.ipynb)
+[Source File](./strategies/strategy_sv_test.ipynb)
 
 ## Strategy Optimization
 
@@ -140,11 +136,15 @@ Best Result: **177.03**%. Finished in 07:22s.
 
 [Source File](strategies/optimization_4.ipynb).
 
-####  Forex (mp+np) Backtet
+####  Forex (Strategy SV) Backtet
 
-Backtesting 160,000 sets of params to find the best params for [Slope & Velocity Strategy](#strategy-4-slope--velocity).
+Backtesting 15,625 sets of params to find the best params for [Slope & Velocity Strategy](#strategy-4-slope--velocity).
 
-Best Result: **177.03**%. Finished in 07:22s.
+Best Result: **316.96**% p.a.
+
+![](./gen/StrategySV_AUDUSD_Daily.png)
+
+> Shadow: Green = LONG, Red = SHORT, Blank = CLOSE.
 
 [Source File](strategies/optimization_4.ipynb).
 

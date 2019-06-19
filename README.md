@@ -4,7 +4,7 @@ A mini Quant Trading System with Alpha, Risks, Cost, Portfolio Construction Mode
 
 ## Highlight: 
 
-**230.93**% for last 240 trade days, using [Slope & Velocity Strategy](./alpha#strategy-forex).
+**316.96**% for last 288 trade days, using [Slope & Velocity Strategy](./alpha#strategy-forex).
 
 ![](./alpha/gen/StrategySV_AUDUSD_Daily.png)
 
