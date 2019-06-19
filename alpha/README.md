@@ -140,7 +140,7 @@ Best Result: **177.03**%. Finished in 07:22s.
 
 Backtesting 15,625 sets of params to find the best params for [Slope & Velocity Strategy](#strategy-4-slope--velocity).
 
-Best Result: **316.96**% p.a.
+Best Result: **281.89**% p.a.
 
 ![](./gen/StrategySV_AUDUSD_Daily.png)
 
